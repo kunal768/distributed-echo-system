@@ -102,6 +102,8 @@ Service B will start on `http://127.0.0.1:8081`
 
 ### Step 3: Test Service A Endpoints
 
+![Success Demo](public/success.gif)
+
 **Health Check:**
 ```bash
 curl -w "\nHTTP Status: %{http_code}\n" http://127.0.0.1:8080/health
@@ -162,6 +164,8 @@ curl -w "\nHTTP Status: %{http_code}\n" "http://127.0.0.1:8081/call-echo?msg="
 
 ### Step 5: Test Failure Scenarios
 
+![Failure Demo](public/failure.gif)
+
 **Service A Down (Connection Refused):**
 
 1. Stop Service A (Ctrl+C in Terminal 1)
@@ -187,6 +191,8 @@ curl http://127.0.0.1:8081/health
 ```
 
 ## Automated Testing
+
+![Automated Testing Demo](public/automated.gif)
 
 **⚠️ Virtual environment MUST be activated before running the test script.**
 
